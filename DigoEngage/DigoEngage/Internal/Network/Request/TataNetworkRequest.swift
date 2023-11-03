@@ -1,0 +1,34 @@
+//
+//  TataNetworkRequest.swift
+//  DigoEngage
+//
+//  Created by dlovewanshi on 12/10/23.
+//
+
+import Foundation
+
+internal class TataNetworkRequest<T: Codable>: BaseNetworkRequest<T> {
+    var authToken: String?
+    
+    override func setupHeaders() {
+        let headers = [
+            APIHeaderNames.contentType: APIHeaderValues.contentType,
+            APIHeaderNames.accept: APIHeaderValues.accept
+        ]
+        self.headers = headers
+    }
+    
+    override func generateUrlComponents() throws -> URLComponents {
+        /// Getting the base Url and preparing the `URLComponents` base on url path, and preparing the URL.
+        let BaseURL: String? = "http://jsonplaceholder.typicode.com/" /// Add Base URL in common file
+        guard let baseUrl = BaseURL, let urlComponents = URLComponents(string: baseUrl + path) else {
+            throw SDKError.failed(reason: "Failed to construct URLComponents in TataNetworkRequest.")
+        }
+        return urlComponents
+    }
+    
+    init(path: String, httpMethod: HTTPMethod, queryParameters: [String : String]? = nil, body: T? = nil, headers: Headers? = nil, authToken: String? = nil) {
+        super.init(path: path, httpMethod: httpMethod, queryParameters: queryParameters, body: body, headers: headers)
+        self.authToken = authToken
+    }
+}
