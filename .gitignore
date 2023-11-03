@@ -1,0 +1,22 @@
+## Build generated
+/build/
+*.xcodeproj
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcuserdata/
+
+# Xcode
+.DS_Store
+.DS_Store
+UserInterfaceState.xcuserstate
+xcuserdata/
+
+# CocoaPods
+/Pods/
+/Podfile.lock
+/Pods.xcodeproj/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
