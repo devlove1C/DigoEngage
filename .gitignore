@@ -1,6 +1,6 @@
 ## Build generated
 /build/
-*.xcodeproj
+
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcuserdata/
 
