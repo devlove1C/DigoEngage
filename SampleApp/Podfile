@@ -6,6 +6,6 @@ target 'SampleApp' do
   use_frameworks!
 
   # Pods for SampleApp
-  pod 'PSL-Engage-SDK', :path =>'../PSL-Engage-SDK'
+   pod 'PSL-Engage-SDK', '~> 1.0'
 
 end
