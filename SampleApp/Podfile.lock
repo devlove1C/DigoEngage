@@ -1,0 +1,16 @@
+PODS:
+  - PSL-Engage-SDK (1.0.0)
+
+DEPENDENCIES:
+  - PSL-Engage-SDK (from `../PSL-Engage-SDK`)
+
+EXTERNAL SOURCES:
+  PSL-Engage-SDK:
+    :path: "../PSL-Engage-SDK"
+
+SPEC CHECKSUMS:
+  PSL-Engage-SDK: 79d71b33d1a4eb667f6d3e0a3bf3effe5f643725
+
+PODFILE CHECKSUM: 999bbb081233e294a18a3b16c3803a05452b538d
+
+COCOAPODS: 1.13.0
