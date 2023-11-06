@@ -7,12 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06678C9D2AF8BEA30041C109 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678C9C2AF8BEA30041C109 /* Example.swift */; };
+		06678CB82AF8C0A20041C109 /* URLSessionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA02AF8C0A20041C109 /* URLSessionFactory.swift */; };
+		06678CB92AF8C0A20041C109 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA12AF8C0A20041C109 /* Network.swift */; };
+		06678CBA2AF8C0A20041C109 /* ApiHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA32AF8C0A20041C109 /* ApiHeaders.swift */; };
+		06678CBB2AF8C0A20041C109 /* NetworkDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA42AF8C0A20041C109 /* NetworkDataResponse.swift */; };
+		06678CBC2AF8C0A20041C109 /* TataNetworkJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA52AF8C0A20041C109 /* TataNetworkJsonResponse.swift */; };
+		06678CBD2AF8C0A20041C109 /* ApiEndpointPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA62AF8C0A20041C109 /* ApiEndpointPath.swift */; };
+		06678CBE2AF8C0A20041C109 /* JsonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA72AF8C0A20041C109 /* JsonFactory.swift */; };
+		06678CBF2AF8C0A20041C109 /* TataNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CA92AF8C0A20041C109 /* TataNetworkRequest.swift */; };
+		06678CC02AF8C0A20041C109 /* BaseNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CAA2AF8C0A20041C109 /* BaseNetworkRequest.swift */; };
+		06678CC12AF8C0A20041C109 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CAB2AF8C0A20041C109 /* NetworkRequest.swift */; };
+		06678CC22AF8C0A20041C109 /* TataNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CAD2AF8C0A20041C109 /* TataNetworkService.swift */; };
+		06678CC32AF8C0A20041C109 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CAE2AF8C0A20041C109 /* NetworkService.swift */; };
+		06678CC42AF8C0A20041C109 /* SDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CAF2AF8C0A20041C109 /* SDKError.swift */; };
+		06678CC52AF8C0A20041C109 /* TataSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB12AF8C0A20041C109 /* TataSDKManager.swift */; };
+		06678CC62AF8C0A20041C109 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB22AF8C0A20041C109 /* ApiService.swift */; };
+		06678CC72AF8C0A20041C109 /* LogEventApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB42AF8C0A20041C109 /* LogEventApiService.swift */; };
+		06678CC82AF8C0A20041C109 /* LogEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB52AF8C0A20041C109 /* LogEventResponse.swift */; };
+		06678CC92AF8C0A20041C109 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB62AF8C0A20041C109 /* EventRequest.swift */; };
+		06678CCA2AF8C0A20041C109 /* EventRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB72AF8C0A20041C109 /* EventRequestBody.swift */; };
 		06F61B282AF8ADA100D41721 /* PSL_Engage_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F61B272AF8ADA100D41721 /* PSL_Engage_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06678C9C2AF8BEA30041C109 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		06678CA02AF8C0A20041C109 /* URLSessionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFactory.swift; sourceTree = "<group>"; };
+		06678CA12AF8C0A20041C109 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		06678CA32AF8C0A20041C109 /* ApiHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHeaders.swift; sourceTree = "<group>"; };
+		06678CA42AF8C0A20041C109 /* NetworkDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataResponse.swift; sourceTree = "<group>"; };
+		06678CA52AF8C0A20041C109 /* TataNetworkJsonResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TataNetworkJsonResponse.swift; sourceTree = "<group>"; };
+		06678CA62AF8C0A20041C109 /* ApiEndpointPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointPath.swift; sourceTree = "<group>"; };
+		06678CA72AF8C0A20041C109 /* JsonFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFactory.swift; sourceTree = "<group>"; };
+		06678CA92AF8C0A20041C109 /* TataNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TataNetworkRequest.swift; sourceTree = "<group>"; };
+		06678CAA2AF8C0A20041C109 /* BaseNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkRequest.swift; sourceTree = "<group>"; };
+		06678CAB2AF8C0A20041C109 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		06678CAD2AF8C0A20041C109 /* TataNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TataNetworkService.swift; sourceTree = "<group>"; };
+		06678CAE2AF8C0A20041C109 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		06678CAF2AF8C0A20041C109 /* SDKError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKError.swift; sourceTree = "<group>"; };
+		06678CB12AF8C0A20041C109 /* TataSDKManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TataSDKManager.swift; sourceTree = "<group>"; };
+		06678CB22AF8C0A20041C109 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		06678CB42AF8C0A20041C109 /* LogEventApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEventApiService.swift; sourceTree = "<group>"; };
+		06678CB52AF8C0A20041C109 /* LogEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEventResponse.swift; sourceTree = "<group>"; };
+		06678CB62AF8C0A20041C109 /* EventRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
+		06678CB72AF8C0A20041C109 /* EventRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRequestBody.swift; sourceTree = "<group>"; };
 		06F61B242AF8ADA100D41721 /* PSL_Engage_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSL_Engage_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F61B272AF8ADA100D41721 /* PSL_Engage_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSL_Engage_SDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -28,6 +64,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06678C9E2AF8C0A20041C109 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				06678C9F2AF8C0A20041C109 /* Network */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		06678C9F2AF8C0A20041C109 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				06678CA02AF8C0A20041C109 /* URLSessionFactory.swift */,
+				06678CA12AF8C0A20041C109 /* Network.swift */,
+				06678CA22AF8C0A20041C109 /* Model */,
+				06678CA72AF8C0A20041C109 /* JsonFactory.swift */,
+				06678CA82AF8C0A20041C109 /* Request */,
+				06678CAC2AF8C0A20041C109 /* Service */,
+				06678CAF2AF8C0A20041C109 /* SDKError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		06678CA22AF8C0A20041C109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06678CA32AF8C0A20041C109 /* ApiHeaders.swift */,
+				06678CA42AF8C0A20041C109 /* NetworkDataResponse.swift */,
+				06678CA52AF8C0A20041C109 /* TataNetworkJsonResponse.swift */,
+				06678CA62AF8C0A20041C109 /* ApiEndpointPath.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06678CA82AF8C0A20041C109 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				06678CA92AF8C0A20041C109 /* TataNetworkRequest.swift */,
+				06678CAA2AF8C0A20041C109 /* BaseNetworkRequest.swift */,
+				06678CAB2AF8C0A20041C109 /* NetworkRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		06678CAC2AF8C0A20041C109 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				06678CAD2AF8C0A20041C109 /* TataNetworkService.swift */,
+				06678CAE2AF8C0A20041C109 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		06678CB02AF8C0A20041C109 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				06678CB12AF8C0A20041C109 /* TataSDKManager.swift */,
+				06678CB22AF8C0A20041C109 /* ApiService.swift */,
+				06678CB32AF8C0A20041C109 /* EventApi */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		06678CB32AF8C0A20041C109 /* EventApi */ = {
+			isa = PBXGroup;
+			children = (
+				06678CB42AF8C0A20041C109 /* LogEventApiService.swift */,
+				06678CB52AF8C0A20041C109 /* LogEventResponse.swift */,
+				06678CB62AF8C0A20041C109 /* EventRequest.swift */,
+				06678CB72AF8C0A20041C109 /* EventRequestBody.swift */,
+			);
+			path = EventApi;
+			sourceTree = "<group>";
+		};
 		06F61B1A2AF8ADA100D41721 = {
 			isa = PBXGroup;
 			children = (
@@ -47,8 +156,9 @@
 		06F61B262AF8ADA100D41721 /* PSL-Engage-SDK */ = {
 			isa = PBXGroup;
 			children = (
+				06678C9E2AF8C0A20041C109 /* Internal */,
+				06678CB02AF8C0A20041C109 /* Public */,
 				06F61B272AF8ADA100D41721 /* PSL_Engage_SDK.h */,
-				06678C9C2AF8BEA30041C109 /* Example.swift */,
 			);
 			path = "PSL-Engage-SDK";
 			sourceTree = "<group>";
@@ -133,7 +243,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06678C9D2AF8BEA30041C109 /* Example.swift in Sources */,
+				06678CBF2AF8C0A20041C109 /* TataNetworkRequest.swift in Sources */,
+				06678CBA2AF8C0A20041C109 /* ApiHeaders.swift in Sources */,
+				06678CC82AF8C0A20041C109 /* LogEventResponse.swift in Sources */,
+				06678CCA2AF8C0A20041C109 /* EventRequestBody.swift in Sources */,
+				06678CC72AF8C0A20041C109 /* LogEventApiService.swift in Sources */,
+				06678CC92AF8C0A20041C109 /* EventRequest.swift in Sources */,
+				06678CB92AF8C0A20041C109 /* Network.swift in Sources */,
+				06678CBE2AF8C0A20041C109 /* JsonFactory.swift in Sources */,
+				06678CC12AF8C0A20041C109 /* NetworkRequest.swift in Sources */,
+				06678CB82AF8C0A20041C109 /* URLSessionFactory.swift in Sources */,
+				06678CBC2AF8C0A20041C109 /* TataNetworkJsonResponse.swift in Sources */,
+				06678CBD2AF8C0A20041C109 /* ApiEndpointPath.swift in Sources */,
+				06678CC52AF8C0A20041C109 /* TataSDKManager.swift in Sources */,
+				06678CC02AF8C0A20041C109 /* BaseNetworkRequest.swift in Sources */,
+				06678CC22AF8C0A20041C109 /* TataNetworkService.swift in Sources */,
+				06678CC62AF8C0A20041C109 /* ApiService.swift in Sources */,
+				06678CC32AF8C0A20041C109 /* NetworkService.swift in Sources */,
+				06678CC42AF8C0A20041C109 /* SDKError.swift in Sources */,
+				06678CBB2AF8C0A20041C109 /* NetworkDataResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
