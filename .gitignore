@@ -7,11 +7,12 @@
 # Xcode
 .DS_Store
 .DS_Store
+DerivedData/
 UserInterfaceState.xcuserstate
 xcuserdata/
 
-# CocoaPods
-/Pods/
+#CocoaPods
+SampleApp/Pods/
 /Podfile.lock
 /Pods.xcodeproj/
 
