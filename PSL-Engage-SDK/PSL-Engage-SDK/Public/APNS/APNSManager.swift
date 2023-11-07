@@ -9,10 +9,10 @@ import Foundation
 public class APNSManager {
     public static let shared = APNSManager()
 
-    private let apns_service = PushNotificationService()
+    private let apns_service = APNSApiService()
 
     public func registerDeviceTokenWithEngage(token: String) {
         // Logic to validate the token inside the SDK
-        apns_service.registerToken(token: token)
+        apns_service.registerDeviceToken(token: token)
     }
 }

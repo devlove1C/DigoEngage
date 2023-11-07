@@ -13,8 +13,11 @@ import PSL_Engage_SDK
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //Register Push notification
         registerForPushNotifications()
+        
+        //Validate your App ID and Data center.
+        let sdkConfig = EngageSDKConfig(appId: "12345", dataCenter: "data_center_01")
         return true
     }
 

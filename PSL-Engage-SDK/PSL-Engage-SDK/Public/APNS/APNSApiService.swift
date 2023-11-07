@@ -7,8 +7,8 @@
 
 import Foundation
 
-class PushNotificationService {
-     func registerToken(token: String) {
+class APNSApiService {
+     func registerDeviceToken(token: String) {
         // Use API to send Token to server
         print("Calling API to Register the Token \(token)")
     }

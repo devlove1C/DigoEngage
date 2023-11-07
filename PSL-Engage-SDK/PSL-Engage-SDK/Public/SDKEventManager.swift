@@ -8,8 +8,8 @@
 import Foundation
 
 /// entry  for using the SDK.
-public class TataSDKManager {
-    public static let shared = TataSDKManager(networkService: TataNetworkService(networking: NetworkService()))
+public class SDKEventManager {
+    public static let shared = SDKEventManager(networkService: TataNetworkService(networking: NetworkService()))
 
     ///Log Event API service
     public internal(set) var event: LogEventApiService
