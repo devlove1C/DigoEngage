@@ -26,6 +26,11 @@
 		06678CC82AF8C0A20041C109 /* LogEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB52AF8C0A20041C109 /* LogEventResponse.swift */; };
 		06678CC92AF8C0A20041C109 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB62AF8C0A20041C109 /* EventRequest.swift */; };
 		06678CCA2AF8C0A20041C109 /* EventRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CB72AF8C0A20041C109 /* EventRequestBody.swift */; };
+		06738F952AF9C4AE008EA823 /* APNSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06738F942AF9C4AE008EA823 /* APNSManager.swift */; };
+		06738F972AFA06DF008EA823 /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06738F962AFA06DF008EA823 /* PushNotificationService.swift */; };
+		06738F9C2AFA072F008EA823 /* DeviceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06738F992AFA072F008EA823 /* DeviceAttributes.swift */; };
+		06738F9D2AFA072F008EA823 /* RegisterAPNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06738F9A2AFA072F008EA823 /* RegisterAPNS.swift */; };
+		06738F9E2AFA072F008EA823 /* UserAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06738F9B2AFA072F008EA823 /* UserAttributes.swift */; };
 		06F61B282AF8ADA100D41721 /* PSL_Engage_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F61B272AF8ADA100D41721 /* PSL_Engage_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,11 @@
 		06678CB52AF8C0A20041C109 /* LogEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEventResponse.swift; sourceTree = "<group>"; };
 		06678CB62AF8C0A20041C109 /* EventRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
 		06678CB72AF8C0A20041C109 /* EventRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRequestBody.swift; sourceTree = "<group>"; };
+		06738F942AF9C4AE008EA823 /* APNSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSManager.swift; sourceTree = "<group>"; };
+		06738F962AFA06DF008EA823 /* PushNotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
+		06738F992AFA072F008EA823 /* DeviceAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAttributes.swift; sourceTree = "<group>"; };
+		06738F9A2AFA072F008EA823 /* RegisterAPNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAPNS.swift; sourceTree = "<group>"; };
+		06738F9B2AFA072F008EA823 /* UserAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAttributes.swift; sourceTree = "<group>"; };
 		06F61B242AF8ADA100D41721 /* PSL_Engage_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PSL_Engage_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F61B272AF8ADA100D41721 /* PSL_Engage_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSL_Engage_SDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +87,7 @@
 			children = (
 				06678CA02AF8C0A20041C109 /* URLSessionFactory.swift */,
 				06678CA12AF8C0A20041C109 /* Network.swift */,
+				06738F982AFA072F008EA823 /* Helpers */,
 				06678CA22AF8C0A20041C109 /* Model */,
 				06678CA72AF8C0A20041C109 /* JsonFactory.swift */,
 				06678CA82AF8C0A20041C109 /* Request */,
@@ -119,6 +130,8 @@
 		06678CB02AF8C0A20041C109 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				06738F942AF9C4AE008EA823 /* APNSManager.swift */,
+				06738F962AFA06DF008EA823 /* PushNotificationService.swift */,
 				06678CB12AF8C0A20041C109 /* TataSDKManager.swift */,
 				06678CB22AF8C0A20041C109 /* ApiService.swift */,
 				06678CB32AF8C0A20041C109 /* EventApi */,
@@ -136,6 +149,17 @@
 			);
 			path = EventApi;
 			sourceTree = "<group>";
+		};
+		06738F982AFA072F008EA823 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				06738F992AFA072F008EA823 /* DeviceAttributes.swift */,
+				06738F9A2AFA072F008EA823 /* RegisterAPNS.swift */,
+				06738F9B2AFA072F008EA823 /* UserAttributes.swift */,
+			);
+			name = Helpers;
+			path = "PSL-Engage-SDK/Internal/Helpers";
+			sourceTree = SOURCE_ROOT;
 		};
 		06F61B1A2AF8ADA100D41721 = {
 			isa = PBXGroup;
@@ -246,7 +270,9 @@
 				06678CBF2AF8C0A20041C109 /* TataNetworkRequest.swift in Sources */,
 				06678CBA2AF8C0A20041C109 /* ApiHeaders.swift in Sources */,
 				06678CC82AF8C0A20041C109 /* LogEventResponse.swift in Sources */,
+				06738F972AFA06DF008EA823 /* PushNotificationService.swift in Sources */,
 				06678CCA2AF8C0A20041C109 /* EventRequestBody.swift in Sources */,
+				06738F9E2AFA072F008EA823 /* UserAttributes.swift in Sources */,
 				06678CC72AF8C0A20041C109 /* LogEventApiService.swift in Sources */,
 				06678CC92AF8C0A20041C109 /* EventRequest.swift in Sources */,
 				06678CB92AF8C0A20041C109 /* Network.swift in Sources */,
@@ -255,8 +281,11 @@
 				06678CB82AF8C0A20041C109 /* URLSessionFactory.swift in Sources */,
 				06678CBC2AF8C0A20041C109 /* TataNetworkJsonResponse.swift in Sources */,
 				06678CBD2AF8C0A20041C109 /* ApiEndpointPath.swift in Sources */,
+				06738F9D2AFA072F008EA823 /* RegisterAPNS.swift in Sources */,
 				06678CC52AF8C0A20041C109 /* TataSDKManager.swift in Sources */,
+				06738F952AF9C4AE008EA823 /* APNSManager.swift in Sources */,
 				06678CC02AF8C0A20041C109 /* BaseNetworkRequest.swift in Sources */,
+				06738F9C2AFA072F008EA823 /* DeviceAttributes.swift in Sources */,
 				06678CC22AF8C0A20041C109 /* TataNetworkService.swift in Sources */,
 				06678CC62AF8C0A20041C109 /* ApiService.swift in Sources */,
 				06678CC32AF8C0A20041C109 /* NetworkService.swift in Sources */,

@@ -10,7 +10,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "dev Lovewanshi" => "lovewanshi.devendra@gmail.com" }
   spec.ios.deployment_target = "14.0"
   spec.source       = { :git => "https://github.com/devlove1C/DigoEngage-iOS.git", :tag => spec.version.to_s }
-  spec.source_files  = "PSL-Engage-SDK/**/*.{swift}"
-  spec.source_files  = "PSL-Engage-SDK/**/*.{swift}"
+  spec.source_files  = "PSL-Engage-SDK/**/*.{swift}", "README.md","LICENSE"
   spec.swift_version = "5.0"
 end
