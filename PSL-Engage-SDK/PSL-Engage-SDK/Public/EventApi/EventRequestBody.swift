@@ -62,7 +62,7 @@ internal struct EventRequestBody : Codable {
     }
     
     init(event_name: String, vendor_identifier: String, contact_id: String, user_attributes: UserAttributes, device_attribute: DeviceAttributes) {
-        self.advertising_identifier = device_attribute.identifier
+        self.advertising_identifier = DeviceAttributes.identifier ?? ""
         self.os_version = device_attribute.osVersion
         self.device_model = device_attribute.model
         self.name = device_attribute.name

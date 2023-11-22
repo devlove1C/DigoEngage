@@ -8,7 +8,7 @@
 import Foundation
 import AdSupport
 struct DeviceAttributes {
-    let identifier: String
+    static var identifier: String?
     let model: String
     let name: String
     let timeZone: String
@@ -16,14 +16,7 @@ struct DeviceAttributes {
     
     init() {
         // Get the advertisement identifier
-        print("Ad support identifier is :- ")
-        print(ASIdentifierManager.shared().advertisingIdentifier)
-        if let identifier = UIDevice.current.identifierForVendor?.uuidString {
-            self.identifier = identifier //TODO: will work on this part
-        } else {
-            self.identifier = "N/A"
-        }
-        
+        Self.identifier = DeviceAttributes.identifier ?? "DefaultIdentifier" //DeviceInformationManager.shared.getAdvertisementIdentifier()  //TODO: will work on this part
         // Get the device model
         self.model = UIDevice.current.model
         

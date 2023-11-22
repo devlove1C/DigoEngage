@@ -47,4 +47,7 @@ public class UserDataManager {
         userAttributes.pushOptInStatusiOS = pushOptInStatusiOS
     }
     
+    public func setAdvertisementIdentifier(identifier: String) {
+        DeviceAttributes.identifier = identifier
+    }
 }

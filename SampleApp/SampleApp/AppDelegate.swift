@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         registerForPushNotifications()
         
         //Validate your App ID and Data center.
-        let sdkConfig = EngageSDKConfig(appId: "12345", dataCenter: "data_center_01")
+        _ = EngageSDKConfig(appId: "12345", dataCenter: "data_center_01")
+        UserDataManager.shared.setAdvertisementIdentifier(identifier: "com.advertisment.app")
         InstallationTracker.shared.isFirstLaunchOrReinstall()
         return true
     }
