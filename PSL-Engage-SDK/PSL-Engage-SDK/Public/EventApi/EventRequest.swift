@@ -7,7 +7,7 @@
 
 import Foundation
 internal class EventRequest:TataNetworkRequest<EventRequestBody> {
-     init(userId: String, eventRequestBody: EventRequestBody) {
-         super.init(path: ApiEndpointPath.userDetails.rawValue, httpMethod: .get, queryParameters: ["userId": eventRequestBody.userId])
+    init(eventRequestBody: EventRequestBody) {
+        super.init(path: ApiEndpointPath.eventTrack(deviceID: 1).path, httpMethod: .post, body: eventRequestBody)
     }
 }

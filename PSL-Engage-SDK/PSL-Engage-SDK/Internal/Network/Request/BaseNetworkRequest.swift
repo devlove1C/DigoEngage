@@ -63,7 +63,8 @@ internal class BaseNetworkRequest<T: Codable>: NetworkRequest {
         
         
         var request = URLRequest(url: url)
-        request.httpMethod = HTTPMethod.get.rawValue
+        request.httpMethod = HTTPMethod.post.rawValue
+        request.allHTTPHeaderFields = self.headers
         
         /// If we have a request body, convert it to usable JSON for the network request.
         if let requestBody = body {

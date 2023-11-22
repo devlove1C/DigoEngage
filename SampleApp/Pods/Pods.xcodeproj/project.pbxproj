@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		060B0D682AFA2B290038AE5F /* EngageSDKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D672AFA2B290038AE5F /* EngageSDKConfig.swift */; };
-		060B0D6B2AFA448D0038AE5F /* RegisterDeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D6A2AFA448D0038AE5F /* RegisterDeviceToken.swift */; };
-		060B0D6F2AFA849F0038AE5F /* AppAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D6E2AFA849F0038AE5F /* AppAuthentication.swift */; };
-		060B0D712AFA85FD0038AE5F /* SDKConfigApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D702AFA85FD0038AE5F /* SDKConfigApiService.swift */; };
+		060B0D732AFCFBDF0038AE5F /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */; };
+		0660A67B2B0DE88600388334 /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660A67A2B0DE88600388334 /* AppEvent.swift */; };
+		06C4E31D2B0B29EE0007D4BE /* DeviceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */; };
+		06C4E3202B0C8DCC0007D4BE /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */; };
+		06C4E3222B0CC0EC0007D4BE /* InstallationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E3212B0CC0EC0007D4BE /* InstallationTracker.swift */; };
+		06C4E3242B0CCE530007D4BE /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E3232B0CCE530007D4BE /* DefaultManager.swift */; };
 		102758FCC824A62EB25A31F21F04150B /* SDKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325CE6E2770549E3FBB58E63140CAC50 /* SDKEventManager.swift */; };
 		17F0C419FF33A60621E12F7A8875C40B /* LogEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40D9A86E7FC1101EFB9E3D7C64DA45 /* LogEventResponse.swift */; };
 		19BB13E5C372E8ECB7E9E600B1B60A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		200C3B3AAAAEDBBC0BE6C1CB1FE4D0B6 /* ApiHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F393C0558854AA4BCC0C6911CD125DF /* ApiHeaders.swift */; };
 		22C72C083569197F85AFF05CB786C8F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2C076A1AB82AB72BEAD9D30EBA811440 /* DeviceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0408F44F23E40EA4FF656BA26C66C /* DeviceAttributes.swift */; };
 		32DF5F3F05B5639214CEA11AA66E68CD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F0D452903C710554AB1CF7CCBD7DB6 /* Network.swift */; };
 		341EAE0FB058900B3A873D3DE5D58349 /* PSL-Engage-SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A787AB636696223C40D34E3C08CC329 /* PSL-Engage-SDK-dummy.m */; };
 		4858EEA236D5B3EE13D8AB54512D9F8E /* RegisterAPNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF0DBE5C8E7C2D2631A61D8259A0C1 /* RegisterAPNS.swift */; };
@@ -39,7 +41,6 @@
 		D15E1449EAA19641A2ED28CC1979C679 /* JsonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08B99C8AA15201093AC36C36E5B3222 /* JsonFactory.swift */; };
 		D1A086B34D264926A3FEA5C935A3998D /* PSL-Engage-SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8ECE0A6DDBA2663C36CB906BD08E818 /* PSL-Engage-SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC7B1F68C937DC413928B35275A766AB /* SDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DD261D7AAF757A76CCDD67A16CAECC /* SDKError.swift */; };
-		E2D4516B70C26231AFEA7A27C7F73E1B /* TataSDKInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E51CB1E8762754AC5C899639DB45716 /* TataSDKInitializer.swift */; };
 		F09D43AEB042218E5298896A0CF3E44C /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5CB0458C5FEF058BEAD123189A5EA /* EventRequest.swift */; };
 		F83E94CC8E4945C8DF6B12DF946884F1 /* LogEventApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9DA8DADD98DAAFDA6DCC9F1721F0D /* LogEventApiService.swift */; };
 /* End PBXBuildFile section */
@@ -57,9 +58,12 @@
 /* Begin PBXFileReference section */
 		000CB412445D66C224D04F5B925175E8 /* TataNetworkJsonResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TataNetworkJsonResponse.swift; sourceTree = "<group>"; };
 		060B0D672AFA2B290038AE5F /* EngageSDKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageSDKConfig.swift; sourceTree = "<group>"; };
-		060B0D6A2AFA448D0038AE5F /* RegisterDeviceToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceToken.swift; sourceTree = "<group>"; };
-		060B0D6E2AFA849F0038AE5F /* AppAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuthentication.swift; sourceTree = "<group>"; };
-		060B0D702AFA85FD0038AE5F /* SDKConfigApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKConfigApiService.swift; sourceTree = "<group>"; };
+		060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		0660A67A2B0DE88600388334 /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
+		06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAttributes.swift; sourceTree = "<group>"; };
+		06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		06C4E3212B0CC0EC0007D4BE /* InstallationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationTracker.swift; sourceTree = "<group>"; };
+		06C4E3232B0CCE530007D4BE /* DefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
 		06DD358D956F5E031322E7F2E34077F4 /* PSL-Engage-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PSL-Engage-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		1060EF3FCE51BA13FF5A8E23D8E17F21 /* TataNetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TataNetworkRequest.swift; sourceTree = "<group>"; };
 		1286CB6C8D1472DD6F3D2219B38DFF72 /* Pods-SampleApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SampleApp"; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +74,6 @@
 		1B849A279695758B42D2518ECF071CFE /* ApiEndpointPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ApiEndpointPath.swift; sourceTree = "<group>"; };
 		1B940412D043458AA40CEED0AA3BC686 /* NetworkService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		267F1653B93A4C4E5146BC11627441D2 /* PSL-Engage-SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSL-Engage-SDK-prefix.pch"; sourceTree = "<group>"; };
-		2E51CB1E8762754AC5C899639DB45716 /* TataSDKInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TataSDKInitializer.swift; sourceTree = "<group>"; };
 		3251CA32B535471DF6A5CFE1080F90DA /* Pods-SampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SampleApp-umbrella.h"; sourceTree = "<group>"; };
 		325CE6E2770549E3FBB58E63140CAC50 /* SDKEventManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDKEventManager.swift; sourceTree = "<group>"; };
 		34DD261D7AAF757A76CCDD67A16CAECC /* SDKError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SDKError.swift; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		43E716D0AC6D33B06F6C2DD20F2D5BDC /* Pods-SampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SampleApp-dummy.m"; sourceTree = "<group>"; };
 		464C932355FFDCFB32566AD274A3C7F0 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		46E175478562555B9B4BF7635457E852 /* Pods-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		4AD0408F44F23E40EA4FF656BA26C66C /* DeviceAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceAttributes.swift; sourceTree = "<group>"; };
 		4FCFD9DDFD6657807346C34FD3A4D6F2 /* PSL-Engage-SDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "PSL-Engage-SDK"; path = PSL_Engage_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B38A4F2AC73B8E2C4231E319065D316 /* NetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		5E689EB3E5043972B99017B68AAE58CD /* URLSessionFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionFactory.swift; sourceTree = "<group>"; };
@@ -155,7 +157,6 @@
 			children = (
 				1916FA659D6DEB767083F71E7871A837 /* APNSApiService.swift */,
 				3B889BEC866F1C834472EE5404BE8B31 /* APNSManager.swift */,
-				060B0D6A2AFA448D0038AE5F /* RegisterDeviceToken.swift */,
 			);
 			path = APNS;
 			sourceTree = "<group>";
@@ -164,10 +165,27 @@
 			isa = PBXGroup;
 			children = (
 				060B0D672AFA2B290038AE5F /* EngageSDKConfig.swift */,
-				060B0D702AFA85FD0038AE5F /* SDKConfigApiService.swift */,
-				060B0D6E2AFA849F0038AE5F /* AppAuthentication.swift */,
 			);
 			path = "SDK-Config";
+			sourceTree = "<group>";
+		};
+		06C4E31E2B0C8DA90007D4BE /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */,
+			);
+			name = KeyChain;
+			sourceTree = "<group>";
+		};
+		06C4E3252B0CD52F0007D4BE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				325CE6E2770549E3FBB58E63140CAC50 /* SDKEventManager.swift */,
+				060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */,
+				06C4E3232B0CCE530007D4BE /* DefaultManager.swift */,
+				06C4E3212B0CC0EC0007D4BE /* InstallationTracker.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		0E7C6557DB9BD014903D90EAE5C06D26 /* Model */ = {
@@ -184,9 +202,9 @@
 		2D877E022040B58EB6B4F4918F50315F /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				06C4E31E2B0C8DA90007D4BE /* KeyChain */,
 				5A625AEBDD1EE8C5DC27BB22107B72F3 /* Helpers */,
 				AA6CD2897B08EC36BFE99A6693CA8463 /* Network */,
-				688D92B4EA4BD9ECCBA937C75499C991 /* Setup */,
 			);
 			name = Internal;
 			path = "PSL-Engage-SDK/Internal";
@@ -234,9 +252,9 @@
 		5A625AEBDD1EE8C5DC27BB22107B72F3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				4AD0408F44F23E40EA4FF656BA26C66C /* DeviceAttributes.swift */,
 				B5EF0DBE5C8E7C2D2631A61D8259A0C1 /* RegisterAPNS.swift */,
 				E1703198AB04197A77B6FED9A0C483BF /* UserAttributes.swift */,
+				06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -245,19 +263,12 @@
 			isa = PBXGroup;
 			children = (
 				61C5CB0458C5FEF058BEAD123189A5EA /* EventRequest.swift */,
+				0660A67A2B0DE88600388334 /* AppEvent.swift */,
 				84B8FDC0E47F55F31FD632D4CFF97DD6 /* EventRequestBody.swift */,
 				39C9DA8DADD98DAAFDA6DCC9F1721F0D /* LogEventApiService.swift */,
 				CE40D9A86E7FC1101EFB9E3D7C64DA45 /* LogEventResponse.swift */,
 			);
 			path = EventApi;
-			sourceTree = "<group>";
-		};
-		688D92B4EA4BD9ECCBA937C75499C991 /* Setup */ = {
-			isa = PBXGroup;
-			children = (
-				2E51CB1E8762754AC5C899639DB45716 /* TataSDKInitializer.swift */,
-			);
-			path = Setup;
 			sourceTree = "<group>";
 		};
 		8054C6377DB313AF9A5F35DB599243AB /* Products */ = {
@@ -338,7 +349,7 @@
 		F5A3DA1F63A74E40BBE937B09EF62A0F /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				325CE6E2770549E3FBB58E63140CAC50 /* SDKEventManager.swift */,
+				06C4E3252B0CD52F0007D4BE /* Manager */,
 				A01D32DE468D7BD900BA71D764003183 /* ApiService.swift */,
 				060B0D6D2AFA82FA0038AE5F /* SDK-Config */,
 				060B0D6C2AFA80700038AE5F /* APNS */,
@@ -465,18 +476,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0660A67B2B0DE88600388334 /* AppEvent.swift in Sources */,
+				060B0D732AFCFBDF0038AE5F /* UserDataManager.swift in Sources */,
 				C2A66BDA24629B52673625A33EA8B22F /* ApiEndpointPath.swift in Sources */,
 				200C3B3AAAAEDBBC0BE6C1CB1FE4D0B6 /* ApiHeaders.swift in Sources */,
 				69DDB0E506A6E7961076AA04BFFA4063 /* ApiService.swift in Sources */,
 				B3919CAC3E39A28B7838CF28E0421977 /* APNSManager.swift in Sources */,
 				503E1047635EE20543C73FED23783CCD /* BaseNetworkRequest.swift in Sources */,
-				060B0D6F2AFA849F0038AE5F /* AppAuthentication.swift in Sources */,
-				2C076A1AB82AB72BEAD9D30EBA811440 /* DeviceAttributes.swift in Sources */,
-				060B0D6B2AFA448D0038AE5F /* RegisterDeviceToken.swift in Sources */,
 				F09D43AEB042218E5298896A0CF3E44C /* EventRequest.swift in Sources */,
 				918FE2811E129EC4EDE10AC48892ECE0 /* EventRequestBody.swift in Sources */,
 				D15E1449EAA19641A2ED28CC1979C679 /* JsonFactory.swift in Sources */,
-				060B0D712AFA85FD0038AE5F /* SDKConfigApiService.swift in Sources */,
+				06C4E3242B0CCE530007D4BE /* DefaultManager.swift in Sources */,
+				06C4E3222B0CC0EC0007D4BE /* InstallationTracker.swift in Sources */,
 				F83E94CC8E4945C8DF6B12DF946884F1 /* LogEventApiService.swift in Sources */,
 				17F0C419FF33A60621E12F7A8875C40B /* LogEventResponse.swift in Sources */,
 				32DF5F3F05B5639214CEA11AA66E68CD /* Network.swift in Sources */,
@@ -486,13 +497,14 @@
 				341EAE0FB058900B3A873D3DE5D58349 /* PSL-Engage-SDK-dummy.m in Sources */,
 				9758ADE2FF6322E4BD3039D314BE81BB /* APNSApiService.swift in Sources */,
 				4858EEA236D5B3EE13D8AB54512D9F8E /* RegisterAPNS.swift in Sources */,
+				06C4E31D2B0B29EE0007D4BE /* DeviceAttributes.swift in Sources */,
 				060B0D682AFA2B290038AE5F /* EngageSDKConfig.swift in Sources */,
 				DC7B1F68C937DC413928B35275A766AB /* SDKError.swift in Sources */,
 				AD30C836BB3D71909C96D207D74625FB /* TataNetworkJsonResponse.swift in Sources */,
 				CEAA600C41775533BAA2FAB5463AA5A0 /* TataNetworkRequest.swift in Sources */,
 				8FB3886AA161EA244B30A2114867083D /* TataNetworkService.swift in Sources */,
-				E2D4516B70C26231AFEA7A27C7F73E1B /* TataSDKInitializer.swift in Sources */,
 				102758FCC824A62EB25A31F21F04150B /* SDKEventManager.swift in Sources */,
+				06C4E3202B0C8DCC0007D4BE /* KeyChainService.swift in Sources */,
 				9D76215542FCDD79BC2B6E23FDC0F7CA /* URLSessionFactory.swift in Sources */,
 				52C539F4F2E5433C417E7B91BE93C109 /* UserAttributes.swift in Sources */,
 			);

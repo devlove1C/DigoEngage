@@ -140,7 +140,6 @@
 				051DD005D2DE5D02CC1E3AED /* Pods-SampleApp.debug.xcconfig */,
 				A45F3A6A9023620F605C0D04 /* Pods-SampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -509,6 +508,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Access to track the advertisements";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -537,6 +537,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Access to track the advertisements";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

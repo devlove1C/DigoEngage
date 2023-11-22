@@ -8,14 +8,12 @@
 import Foundation
 
 public class LogEventApiService: ApiService {
- // Log Event Service
-// http://jsonplaceholder.typicode.com/posts?userId=
-    public func logEventService(userId: String) async throws -> LogEventResponse {
-        let requestBody = EventRequestBody(userId: userId)
-        let request = EventRequest(userId: userId, eventRequestBody: requestBody)
-        print("Request :- \(request)")
+    public func logEventService(eventName: AppEvent, advertisingIdentifier: String, vendorIdentifier: String, contactId: String) async throws -> LogEventResponse {
+        let deviceInfo = DeviceAttributes()
+        let requestBody = EventRequestBody(event_name: eventName.rawValue, vendor_identifier: vendorIdentifier, contact_id: contactId, user_attributes: UserDataManager.shared.userAttributes, device_attribute: deviceInfo)
+        
+        let request = EventRequest(eventRequestBody: requestBody)
         let response = try await networkService.fetchData(LogEventResponse.self, networkRequest: request)
-        print("Response is :- \(response)")
-        return response.jsonObject
+                return response.jsonObject
     }
 }
