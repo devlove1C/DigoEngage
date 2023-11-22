@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Validate your App ID and Data center.
         let sdkConfig = EngageSDKConfig(appId: "12345", dataCenter: "data_center_01")
+        InstallationTracker.shared.isFirstLaunchOrReinstall()
         return true
     }
 

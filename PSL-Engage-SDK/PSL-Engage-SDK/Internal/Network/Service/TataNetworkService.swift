@@ -31,8 +31,14 @@ internal class TataNetworkService {
             if let httpResponse = response.urlResponse as? HTTPURLResponse, let error = getHttpError(httpResponse) {
                 throw error
             }
-            
             let result = try parseJsonResponse(data: response.data, as: type)
+            
+            do {
+                let responseObject = try JSONSerialization.jsonObject(with:response.data, options: .mutableLeaves)
+                print("Response Object is \(responseObject)")
+            } catch let myJSONError {
+                print(myJSONError)
+            }
             
             return TataNetworkJsonResponse((result, response.urlResponse))
         } catch let error as SDKError {
@@ -88,6 +94,7 @@ internal class TataNetworkService {
         do {
             // Attempt to decode & return the result.
             let result = try self.decoder.decode(type, from: data)
+            print("Response is :- \(result)")
             return result
         } catch {
             throw SDKError.badServerResponse(error)

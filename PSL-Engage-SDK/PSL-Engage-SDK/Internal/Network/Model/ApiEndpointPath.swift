@@ -8,7 +8,16 @@
 import Foundation
 
 /// Action Api url path : `Enum` type
-internal enum ApiEndpointPath: String {
-    case userDetails                   = "/posts?"
-    case userList                      = "/users"
+internal enum ApiEndpointPath {
+    case eventTrack(deviceID: Int)
+    case userDetails
+    
+    var path: String {
+        switch self {
+        case .eventTrack(let deviceID):
+            return "/api/v3/accounts/\(deviceID)/devices"
+        case .userDetails:
+            return "/userDetails"
+        }
+    }
 }
