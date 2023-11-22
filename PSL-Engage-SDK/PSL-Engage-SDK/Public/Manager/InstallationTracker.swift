@@ -21,17 +21,17 @@ public class InstallationTracker {
             }
             _ = KeychainService.save(key: uniqueKey, data: uniqueIdentifier)
             DefaultManager.shared.set(keyValue: uniqueIdentifier, forKey: uniqueKey)
-            updateAppStatus(event: "INSTALL") //TODO: Update the log on server for installaion the App
+            updateAppStatus(event: AppEvent.installApp) //TODO: Update the log on server for installaion the App
         }else if KeychainService.load(key: uniqueKey) != nil && DefaultManager.shared.string(key: uniqueKey) == nil {
             guard let uniqueIdentifier = UIDevice.current.identifierForVendor?.uuidString else {
                 return
             }
             DefaultManager.shared.set(keyValue: uniqueIdentifier, forKey: uniqueKey)
-            updateAppStatus(event: "REINSTALL") //TODO: Update the log on server for Re-installaion the App
+            updateAppStatus(event: AppEvent.reinstall) //TODO: Update the log on server for Re-installaion the App
         }
     }
     
-    func updateAppStatus(event: String) {
+    func updateAppStatus(event: AppEvent) {
         Task {
             _ = try await SDKEventManager.shared.event.logEventService(eventName: event, advertisingIdentifier: "123256", vendorIdentifier: "vendror.com", contactId: "60109")
         }

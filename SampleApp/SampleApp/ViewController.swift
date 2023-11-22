@@ -22,16 +22,16 @@ class ViewController: UIViewController {
     }
         
     @IBAction func signInEvent(_ sender: UIButton) {
-        logEvent(event_name: "SIGN_IN")
+        logEvent(event: AppEvent.moeSignIn)
     }
     
     @IBAction func signOutEvent(_ sender: UIButton) {
-        logEvent(event_name: "SIGN_OUT")
+        logEvent(event: AppEvent.moeLogout)
     }
     
-    func logEvent(event_name: String)  {
+    func logEvent(event: AppEvent)  {
         Task {
-            _ = try await SDKEventManager.shared.event.logEventService(eventName: event_name, advertisingIdentifier: "123256", vendorIdentifier: "vendror.com", contactId: "60109")
+            _ = try await SDKEventManager.shared.event.logEventService(eventName: event, advertisingIdentifier: "123256", vendorIdentifier: "vendror.com", contactId: "60109")
         }
     }
     
