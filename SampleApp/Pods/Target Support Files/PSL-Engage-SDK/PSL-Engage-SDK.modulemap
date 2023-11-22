@@ -1,0 +1,6 @@
+framework module PSL_Engage_SDK {
+  umbrella header "PSL-Engage-SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
