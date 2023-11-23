@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PSL-Engage-SDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "PSL-Engage-SDK for iOS"
   spec.description  = <<-DESC
                    SL-Engage-SDK is a mobile marketing automation company.PSL-Engage-SDK contains the central configuration of your app and common Utils and modules to be used accross all the PSL-Engage-SDK frameworks. PSL-Engage-SDK framework enables you to track required data regarding user and user's activities inside the app to use the same for effective engagement.
