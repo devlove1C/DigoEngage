@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// APIHeader
+/// API-Header
 internal struct APIHeaderNames {
     static let contentType = "Content-Type"
     static let accept = "Accept"
@@ -15,7 +15,7 @@ internal struct APIHeaderNames {
     static let authorization = "Authorization"
 }
 
-/// APIHeaderValues
+/// API-Header Values
 internal enum APIHeaderValues {
     static let contentType = "application/json"
     static let accept = "application/json"

@@ -7,11 +7,11 @@
 
 import Foundation
 
-/// Superclass of all API related Service classes.
+/// Base class for all API related Service classes
 public class ApiService {
     internal var networkService: TataNetworkService
 
-    /// Init method
+    /// `init` method
     internal init(networkService: TataNetworkService) {
         self.networkService = networkService
     }

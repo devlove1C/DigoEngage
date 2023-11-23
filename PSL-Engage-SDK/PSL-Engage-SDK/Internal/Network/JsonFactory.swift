@@ -7,20 +7,18 @@
 
 import Foundation
 
-/// Factory for creating new & reusing `JSONDecoder` & `JSONEncoder` instances.
+/// This Class for creating new & reusing `JSONDecoder` & `JSONEncoder` instances.
 internal class JsonFactory {
     /// Singleton.
     static let shared = JsonFactory()
     
-    /// Hide init as the `shared` singleton should always be used.
     private init() {}
     
-    /// Lazily created decoder for reuse.
+    /// Lazily created decoder , and encoder for reuse.
     lazy var decoder: JSONDecoder = {
         return JSONDecoder()
     }()
     
-    /// Lazily created encoder for reuse.
     lazy var encoder: JSONEncoder = {
         return JSONEncoder()
     }()

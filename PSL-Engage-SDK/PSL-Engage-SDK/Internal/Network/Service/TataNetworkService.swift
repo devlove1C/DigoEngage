@@ -16,7 +16,7 @@ internal class TataNetworkService {
     
     internal var networking: NetworkProtocol
 
-    /// Private init, nothing should call this & everything should use `shared`.
+    /// To access anything need to use `shared`
     private init() {
         self.networking = NetworkService()
     }
@@ -69,26 +69,7 @@ internal class TataNetworkService {
             throw SDKError.networkError(error)
         }
     }
-    
-    func fetchData(networkRequest: any NetworkRequest, urlSession: URLSession = URLSessionFactory.shared.defaultSession) async throws -> HTTPURLResponse {
-        do {
-            let response = try await networking.fetchData(networkRequest: networkRequest, urlSession: urlSession)
-            guard let httpResponse = response.urlResponse as? HTTPURLResponse else {
-                // TODO: Do we need this unknown case? Seems like other methods above handle it differently.
-                throw SDKError.unknown()
-            }
-            if let error = getHttpError(httpResponse) {
-                throw error
-            }
-            
-            return httpResponse
-        } catch let error as SDKError {
-            // TODO: Better way of handling bubbling up existing SDKErrors?
-            throw error
-        } catch {
-            throw SDKError.networkError(error)
-        }
-    }
+
   
     private func parseJsonResponse<T: Decodable>(data: Data, as type: T.Type) throws -> T {
         do {
@@ -105,7 +86,7 @@ internal class TataNetworkService {
         let statusCode = response.statusCode
         
         switch statusCode {
-        case 200, 204:
+        case 200:
             return nil
         case 400:
             return .badRequest

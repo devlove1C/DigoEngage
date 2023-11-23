@@ -13,7 +13,7 @@ internal class URLSessionFactory {
     
     let defaultSession: URLSession = URLSession.shared
     
-    /// Special case session for when we need a session that will never use any possible cached information controlled by the OS.
+    /// Special case session for scenarios where no cache no information controlled by the OS should be utilized
     lazy var noCacheSession: URLSession = {
         return URLSession(configuration: self.noCacheSessionConfig())
     }()

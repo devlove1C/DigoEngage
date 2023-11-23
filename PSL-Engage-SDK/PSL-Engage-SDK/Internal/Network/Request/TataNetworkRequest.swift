@@ -20,7 +20,6 @@ internal class TataNetworkRequest<T: Codable>: BaseNetworkRequest<T> {
     }
     
     override func generateUrlComponents() throws -> URLComponents {
-        /// Getting the base Url and preparing the `URLComponents` base on url path, and preparing the URL.
         let BaseURL: String? = "http://alb-set2-414339619.ap-south-1.elb.amazonaws.com:3050" /// Add Base URL in common file
         guard let baseUrl = BaseURL, let urlComponents = URLComponents(string: baseUrl + path) else {
             throw SDKError.failed(reason: "Failed to construct URLComponents in TataNetworkRequest.")
