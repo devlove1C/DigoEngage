@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		060B0D682AFA2B290038AE5F /* EngageSDKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D672AFA2B290038AE5F /* EngageSDKConfig.swift */; };
 		060B0D732AFCFBDF0038AE5F /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */; };
+		063F5B792B10A28C00155E4D /* BackgroundServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F5B782B10A28C00155E4D /* BackgroundServiceManager.swift */; };
 		0660A67B2B0DE88600388334 /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660A67A2B0DE88600388334 /* AppEvent.swift */; };
 		06C4E31D2B0B29EE0007D4BE /* DeviceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */; };
 		06C4E3202B0C8DCC0007D4BE /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */; };
@@ -59,6 +60,7 @@
 		000CB412445D66C224D04F5B925175E8 /* TataNetworkJsonResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TataNetworkJsonResponse.swift; sourceTree = "<group>"; };
 		060B0D672AFA2B290038AE5F /* EngageSDKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageSDKConfig.swift; sourceTree = "<group>"; };
 		060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		063F5B782B10A28C00155E4D /* BackgroundServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundServiceManager.swift; sourceTree = "<group>"; };
 		0660A67A2B0DE88600388334 /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
 		06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAttributes.swift; sourceTree = "<group>"; };
 		06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				B5EF0DBE5C8E7C2D2631A61D8259A0C1 /* RegisterAPNS.swift */,
 				E1703198AB04197A77B6FED9A0C483BF /* UserAttributes.swift */,
 				06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */,
+				063F5B782B10A28C00155E4D /* BackgroundServiceManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				0660A67B2B0DE88600388334 /* AppEvent.swift in Sources */,
 				060B0D732AFCFBDF0038AE5F /* UserDataManager.swift in Sources */,
 				C2A66BDA24629B52673625A33EA8B22F /* ApiEndpointPath.swift in Sources */,
+				063F5B792B10A28C00155E4D /* BackgroundServiceManager.swift in Sources */,
 				200C3B3AAAAEDBBC0BE6C1CB1FE4D0B6 /* ApiHeaders.swift in Sources */,
 				69DDB0E506A6E7961076AA04BFFA4063 /* ApiService.swift in Sources */,
 				B3919CAC3E39A28B7838CF28E0421977 /* APNSManager.swift in Sources */,

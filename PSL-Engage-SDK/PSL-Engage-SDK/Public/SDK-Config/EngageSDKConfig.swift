@@ -14,6 +14,7 @@ public struct EngageSDKConfig {
         self.appId = appId
         self.dataCenter = dataCenter
         validateApiKey(appId: self.appId)
+        _ = BackgroundServiceManager.shared.self  /// Initialize background service
     }
     
     func validateApiKey(appId: String) {
