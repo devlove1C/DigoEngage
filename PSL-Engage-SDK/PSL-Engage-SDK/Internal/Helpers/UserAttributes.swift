@@ -12,6 +12,8 @@ internal struct UserAttributes: Codable {
     var gender: String
     var birthday: String
     var location: String
+    var lat: Double
+    var long: Double
     var lastName: String
     var firstName: String
     var mobileNumber: String
@@ -25,6 +27,8 @@ internal struct UserAttributes: Codable {
         case gender
         case birthday
         case location
+        case lat
+        case long
         case lastName = "last_name"
         case firstName = "first_name"
         case mobileNumber = "mobile_number "
@@ -46,6 +50,8 @@ internal struct UserAttributes: Codable {
         self.advertisingIdentifier = advertisingIdentifier
         self.moengagePushOptedOut  = moengagePushOptedOut
         self.pushOptInStatusiOS = pushOptInStatusiOS
+        self.lat = 23.00
+        self.long = 434.00
     }
     
     func encode(to encoder: Encoder) throws {

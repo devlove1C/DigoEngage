@@ -11,6 +11,7 @@
 		060B0D732AFCFBDF0038AE5F /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */; };
 		063F5B792B10A28C00155E4D /* BackgroundServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063F5B782B10A28C00155E4D /* BackgroundServiceManager.swift */; };
 		0660A67B2B0DE88600388334 /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0660A67A2B0DE88600388334 /* AppEvent.swift */; };
+		06A793562B1855A800D9575E /* EngageGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A793552B1855A800D9575E /* EngageGeoLocation.swift */; };
 		06C4E31D2B0B29EE0007D4BE /* DeviceAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */; };
 		06C4E3202B0C8DCC0007D4BE /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */; };
 		06C4E3222B0CC0EC0007D4BE /* InstallationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E3212B0CC0EC0007D4BE /* InstallationTracker.swift */; };
@@ -62,6 +63,7 @@
 		060B0D722AFCFBDF0038AE5F /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		063F5B782B10A28C00155E4D /* BackgroundServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundServiceManager.swift; sourceTree = "<group>"; };
 		0660A67A2B0DE88600388334 /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
+		06A793552B1855A800D9575E /* EngageGeoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageGeoLocation.swift; sourceTree = "<group>"; };
 		06C4E31C2B0B29EE0007D4BE /* DeviceAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAttributes.swift; sourceTree = "<group>"; };
 		06C4E31F2B0C8DCC0007D4BE /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		06C4E3212B0CC0EC0007D4BE /* InstallationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallationTracker.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			children = (
 				06C4E3252B0CD52F0007D4BE /* Manager */,
 				A01D32DE468D7BD900BA71D764003183 /* ApiService.swift */,
+				06A793552B1855A800D9575E /* EngageGeoLocation.swift */,
 				060B0D6D2AFA82FA0038AE5F /* SDK-Config */,
 				060B0D6C2AFA80700038AE5F /* APNS */,
 				63EBAE864D5DCB1CB2B022D8C8C37032 /* EventApi */,
@@ -490,6 +493,7 @@
 				F09D43AEB042218E5298896A0CF3E44C /* EventRequest.swift in Sources */,
 				918FE2811E129EC4EDE10AC48892ECE0 /* EventRequestBody.swift in Sources */,
 				D15E1449EAA19641A2ED28CC1979C679 /* JsonFactory.swift in Sources */,
+				06A793562B1855A800D9575E /* EngageGeoLocation.swift in Sources */,
 				06C4E3242B0CCE530007D4BE /* DefaultManager.swift in Sources */,
 				06C4E3222B0CC0EC0007D4BE /* InstallationTracker.swift in Sources */,
 				F83E94CC8E4945C8DF6B12DF946884F1 /* LogEventApiService.swift in Sources */,

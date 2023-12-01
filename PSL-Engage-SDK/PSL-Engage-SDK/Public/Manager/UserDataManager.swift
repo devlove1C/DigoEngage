@@ -50,4 +50,9 @@ public class UserDataManager {
     public func setAdvertisementIdentifier(identifier: String) {
         DeviceAttributes.identifier = identifier
     }
+    
+    public func setUserLocation(location: EngageGeoLocation) {
+//        userAttributes.lat = location.latitute
+//        userAttributes.lon  = location.longitute
+    }
 }

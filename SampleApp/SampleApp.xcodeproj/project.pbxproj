@@ -16,6 +16,7 @@
 		06678CEF2AF8C4DB0041C109 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CEE2AF8C4DB0041C109 /* SampleAppTests.swift */; };
 		06678CF92AF8C4DB0041C109 /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CF82AF8C4DB0041C109 /* SampleAppUITests.swift */; };
 		06678CFB2AF8C4DB0041C109 /* SampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06678CFA2AF8C4DB0041C109 /* SampleAppUITestsLaunchTests.swift */; };
+		06A793582B189A0C00D9575E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A793572B189A0C00D9575E /* LocationManager.swift */; };
 		7E8E64D1D13CE1199E3881BE /* Pods_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F057F45F4F2B4093AD85884 /* Pods_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		06678CF42AF8C4DB0041C109 /* SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06678CF82AF8C4DB0041C109 /* SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITests.swift; sourceTree = "<group>"; };
 		06678CFA2AF8C4DB0041C109 /* SampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06A793572B189A0C00D9575E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5F057F45F4F2B4093AD85884 /* Pods_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45F3A6A9023620F605C0D04 /* Pods-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-SampleApp/Pods-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				06678CD72AF8C4D90041C109 /* AppDelegate.swift */,
 				06678CD92AF8C4D90041C109 /* SceneDelegate.swift */,
 				06678CDB2AF8C4D90041C109 /* ViewController.swift */,
+				06A793572B189A0C00D9575E /* LocationManager.swift */,
 				06678CDD2AF8C4D90041C109 /* Main.storyboard */,
 				06678CE02AF8C4DB0041C109 /* Assets.xcassets */,
 				06678CE22AF8C4DB0041C109 /* LaunchScreen.storyboard */,
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A793582B189A0C00D9575E /* LocationManager.swift in Sources */,
 				06678CDC2AF8C4D90041C109 /* ViewController.swift in Sources */,
 				06678CD82AF8C4D90041C109 /* AppDelegate.swift in Sources */,
 				06678CDA2AF8C4D90041C109 /* SceneDelegate.swift in Sources */,
@@ -508,6 +512,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Access location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get location";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Access to track the advertisements";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -537,6 +544,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Access location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get location";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Access to track the advertisements";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
